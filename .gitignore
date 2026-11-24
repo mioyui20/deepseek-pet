@@ -1,0 +1,6 @@
+test-output/
+test-failure.txt
+*.zip
+*.exe
+dist/
+assets/generation.txt
