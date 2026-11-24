@@ -1,26 +1,32 @@
-# 大肥鱼宠物（deepseek-pet）
+# 大肥鱼桌宠 · Da Fei Yu
 
-大肥鱼Windows 桌宠。她会跟着你移动鼠标、敲对应的键，闲下来还会趴在桌上打盹。
+[English](README.en.md) · [下载 Windows 便携版](https://github.com/mioyui20/deepseek-pet/releases/latest/download/DaFeiYu-Windows-x64.zip)
 
-## 动作预览
+大肥鱼是一只陪你打字和移动鼠标的 Windows 桌宠。她会伸手去敲对应的键，也会握着小鼠标跟随指针。闲下来一会儿，她就把脸颊靠到手腕上打盹。
 
-![大肥鱼跟随鼠标、敲键、趴睡和醒来的动作预览](docs/DaFeiYu-motion.gif)
+![大肥鱼敲键、跟随鼠标、打盹和醒来](docs/DaFeiYu-motion.gif)
 
-## 下载和运行
+## 下载后怎么打开
 
-从 [GitHub Releases](https://github.com/mioyui20/deepseek-pet/releases/latest) 下载 `DaFeiYu-Windows-x64.zip`，解压后双击 `DaFeiYu.exe`。支持 64 位 Windows 10 / 11 和 .NET Framework 4.8。
+需要 **64 位 Windows 10 或 11** 和 **.NET Framework 4.8**。
 
-再次打开程序会显示已运行的桌宠。若要切换到管理员权限，请先从系统托盘退出当前实例，再右键选择「以管理员身份运行」。
+1. 下载并解压 `DaFeiYu-Windows-x64.zip`。
+2. 双击 `DaFeiYu.exe`，试试打字和移动鼠标。
+3. 右键大肥鱼或系统托盘图标，打开设置。顶部可切换 **中文 / English**。
 
-## 操作
+升级前先从托盘退出当前版本，再解压并打开新版。[查看全部版本](https://github.com/mioyui20/deepseek-pet/releases)
 
-- 打字和移动鼠标会分别驱动两只手。握鼠时，小手和鼠标一起在垫上滑动。敲较远的键时，大肥鱼会稍稍探身。闲置约 45 秒后，她会先把前臂放到桌上，再把脸颊靠到手腕上。操作后她会抬头醒来。
-- 左键拖动摆放，轻点可摸摸头。右键宠物或托盘图标可打开设置、立即打盹、暂停、置顶、隐藏或退出。
-- 默认宽度为 300 像素，可在设置中调整大小、不透明度和界面语言。开启穿透后，可从托盘菜单恢复点击。
-- 可与咕咕嘎嘎同时运行。运行与设置独立，默认在屏幕左下角出现。
+## 日常操作
 
-程序离线运行。暂存按键状态和鼠标坐标，仅用于动画，不记录键入文字。设置保存在 `%LOCALAPPDATA%\DaFeiYu\settings.json`。
+- 拖动大肥鱼可以挪位置，轻点可以摸摸头。
+- 大约 45 秒不动键鼠，她会趴下打盹。操作键鼠即可叫醒，也可以从菜单立即预览打盹。
+- 想少挡一点画面，可以调小、调透明或开启鼠标穿透。开启后从托盘菜单关闭。
+- 找不到她时，可以再次打开 EXE，或在托盘菜单选择 **显示宠物**、**回到屏幕左下角**。图标可能在托盘折叠区域。
 
-## 从源码构建
+她也可以和咕咕嘎嘎同时运行，两只桌宠的设置各自保存。
 
-在项目目录运行 `powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1` 构建，默认输出到 `dist`。用 `test.ps1` 构建并运行自检。
+## 隐私与反馈
+
+程序离线运行，临时按键状态和鼠标坐标只用于动画，不记录键入文字。设置保存在本机。
+
+[反馈问题或建议](https://github.com/mioyui20/deepseek-pet/issues)时，可以附上 Windows 版本和遇到问题的操作步骤。
